@@ -11,7 +11,7 @@ var CurrentBlank = 0;
 var mode = 0;
 var enterskip = 0;
 var enterskip2 = 0;
-
+var Successful = 0, Failed = 0;
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -115,27 +115,31 @@ document.addEventListener("keyup", (k) => {
         if(lastchar === '.') bcc0 = bcc0.substring(0, bcclen - 1);
         document.getElementById("textbox" + CurrentBlank).value = bcc0;
         document.getElementById("textbox" + CurrentBlank).classList.add("wrong");
+        Failed++;
+        Successful--;
     }
     if(k.code==='Enter'){
         var bcc0 = BlankWords[CurrentSentence][CurrentBlank][0];
         if(lastchar === '.') bcc0 = bcc0.substring(0, bcclen - 1);
         document.getElementById("textbox" + CurrentBlank).value = bcc0;
         document.getElementById("textbox" + CurrentBlank).classList.add("wrong");
-
+        Failed++;
+        Successful--;
     }
     var CurrentBlankValue=document.getElementById("textbox" + CurrentBlank).value;
     
     if(lastchar === '.') CurrentBlankValue += lastchar;
     if(CurrentBlankValue === BlankWords[CurrentSentence][CurrentBlank][0]){
-        console.log("a");
+        Successful++;
         if((CurrentBlank !== BlankWords[CurrentSentence].length - 1) || (enterskip === 1 && k.code === 'Enter') || (enterskip === 0 && k.code !== 'Enter'))
             {CurrentBlank++; enterskip2 = 0;}
-        else enterskip2 = 1;
+        else {enterskip2 = 1;}
         if(CurrentBlank === BlankWords[CurrentSentence].length){
             if(enterskip === 1 && k.code==='Enter'){
                 enterskip = 0;
                 CurrentBlank = 0;
                 CurrentSentence++;
+                Failed--;
             }
             else if (enterskip === 0 && k.code !== 'Enter'){
                 CurrentBlank = 0;
@@ -176,13 +180,10 @@ document.addEventListener("keyup", (k) => {
         enterskip = 1;
         enterskip2 = 0;
     }
-    
+    document.getElementById("rates").innerHTML = 'Rates: ' + (Successful * 100 / (Successful + Failed)).toFixed(2) + '%';
 })
 
-console.log(WordsInSentences);
-console.log(BlanksPosition);
-console.log(NofBlanks);
-console.log(BlankWords);
-
-
-
+// console.log(WordsInSentences);
+// console.log(BlanksPosition);
+// console.log(NofBlanks);
+// console.log(BlankWords);
