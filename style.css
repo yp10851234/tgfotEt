@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-size: 3rem;
+    font-family: monospace;
+
+}
+
+.sentence{
+    background-color: rgb(82, 82, 82);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+
+
+.textline{
+    position: relative;
+    background-color: rgb(82,82,82);
+    font-size: 3rem;
+}
+
+.textbox{
+    background-color: rgb(82,82,82);
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    margin-left:-0.8px;
+    border: none;
+    border-bottom:5px solid white;
+    border-image: linear-gradient(to left, rgb(82,82,82) 1.7rem, white 1.7rem) 100% 1;
+    color: white;
+    font-family: monospace;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.wrong{
+    color:rgb(255, 115, 0);
+}
