@@ -58,6 +58,7 @@ var mode = 0;
 var enterskip = 0;
 var enterskip2 = 0;
 var Successful = 0, Failed = 0;
+const PMarks = ['.', ',', '!', '?', ';'];
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -117,7 +118,7 @@ function display(w, b, c){
     for(var i = 0; i < wclen; i++){
         if(b[c][i] == 1){
             var tbl = w[c][i].length;
-            if(w[c][i][tbl-1] === '.'){
+            if(PMarks.includes(w[c][i][tbl-1])){
                 document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" size="' + (tbl - 1) + '" maxlength="' + (tbl - 1) + '" autocomplete="off"></input>' + w[c][i][tbl-1];
             }
             else{
@@ -159,7 +160,7 @@ document.addEventListener("keyup", (k) => {
     var lastchar = BlankWords[CurrentSentence][CurrentBlank][0][bcclen - 1];
     if(k.code==='Tab'){
         var bcc0 = BlankWords[CurrentSentence][CurrentBlank][0];
-        if(lastchar === '.') bcc0 = bcc0.substring(0, bcclen - 1);
+        if(PMarks.includes(lastchar)) bcc0 = bcc0.substring(0, bcclen - 1);
         document.getElementById("textbox" + CurrentBlank).value = bcc0;
         document.getElementById("textbox" + CurrentBlank).classList.add("wrong");
         Failed++;
@@ -167,7 +168,7 @@ document.addEventListener("keyup", (k) => {
     }
     if(k.code==='Enter'){
         var bcc0 = BlankWords[CurrentSentence][CurrentBlank][0];
-        if(lastchar === '.') bcc0 = bcc0.substring(0, bcclen - 1);
+        if(PMarks.includes(lastchar)) bcc0 = bcc0.substring(0, bcclen - 1);
         document.getElementById("textbox" + CurrentBlank).value = bcc0;
         document.getElementById("textbox" + CurrentBlank).classList.add("wrong");
         Failed++;
@@ -175,7 +176,7 @@ document.addEventListener("keyup", (k) => {
     }
     var CurrentBlankValue=document.getElementById("textbox" + CurrentBlank).value;
     
-    if(lastchar === '.') CurrentBlankValue += lastchar;
+    if(PMarks.includes(lastchar)) CurrentBlankValue += lastchar;
     if(CurrentBlankValue === BlankWords[CurrentSentence][CurrentBlank][0]){
         Successful++;
         if((CurrentBlank !== BlankWords[CurrentSentence].length - 1) || (enterskip === 1 && k.code === 'Enter') || (enterskip === 0 && k.code !== 'Enter'))
