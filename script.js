@@ -119,7 +119,7 @@ function display(w, b, c){
         if(b[c][i] == 1){
             var tbl = w[c][i].length;
             if(PMarks.includes(w[c][i][tbl-1])){
-                document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" size="' + (tbl - 1) + '" maxlength="' + (tbl - 1) + '" autocomplete="off"></input>' + w[c][i][tbl-1];
+                document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" size="' + (tbl - 1) + '" maxlength="' + (tbl - 1) + '" autocomplete="off"></input>' + w[c][i][tbl-1] + ' ';
             }
             else{
                 document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" size="' + tbl + '" maxlength="' + tbl + '" autocomplete="off"></input>';
