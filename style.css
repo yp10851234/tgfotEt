@@ -3,28 +3,28 @@
 }
 
 body{
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-items: center;
-    grid-auto-rows:auto;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(44, 44, 46);
     color: white;
-    font-size: 3rem;
+    font-size: 3vmax;
     font-family: monospace;
 }
 
 .stats{
-    text-align: center;
-    background-color: rgb(82, 82, 82);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    background-color: rgb(65, 65, 65);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .sentence{
-    text-align: center;
     background-color: rgb(82, 82, 82);
     padding: 1rem;
     margin: 1rem;
@@ -36,18 +36,17 @@ body{
 .textline{
     position: relative;
     background-color: rgb(82,82,82);
-    font-size: 3rem;
 }
 
 .textbox{
     background-color: rgb(82,82,82);
-    font-size: 3rem;
+    font-size: 3vmax;
     padding: 0;
     margin: 0;
-    margin-left:-0.8px;
+    margin-left:-0.05vmax;
     border: none;
-    border-bottom:5px solid white;
-    border-image: linear-gradient(to left, rgb(82,82,82) 1.7rem, white 1.7rem) 100% 1;
+    border-bottom:3px solid white;
+    border-image: linear-gradient(to left, rgb(82,82,82) 1.7vmax, white 1.7vmax) 100% 1;
     color: white;
     font-family: monospace;
 }
