@@ -18,17 +18,17 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 2rem;
+    font-size: 2vmax;
     background-color: rgb(65, 65, 65);
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-bottom-left-radius: 1rem;
+    padding: 0.5vmax 1vmax 0.5vmax 1vmax;
+    border-bottom-left-radius: 1vmax;
 }
 
 .sentence{
     background-color: rgb(82, 82, 82);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
+    padding: 1vmax;
+    margin: 1vmax;
+    border-radius: 1vmax;
 }
 
 
@@ -57,4 +57,39 @@ input:focus{
 
 .wrong{
     color:rgb(255, 115, 0);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.buttons button{
+    margin: 2vmax;
+    padding: 1vmax;
+    font-size: 5vmax;
+    border-radius: 1vmax;
+    border: 0;
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
+
+.buttons button:hover, .back:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+.buttons button:focus, .back:focus{
+    background-color: rgb(150, 150, 150);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5vmax 1vmax 0.5vmax 1vmax;
+    border: none;
+    border-bottom-right-radius: 1vmax;
+    font-size: 2vmax;
+    background-color: rgb(82, 82, 82);
+    color: white;
 }
