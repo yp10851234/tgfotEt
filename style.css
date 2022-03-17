@@ -46,7 +46,6 @@ body{
     margin-left:-0.05vmax;
     border: none;
     border-bottom:3px solid white;
-    border-image: linear-gradient(to left, rgb(82,82,82) 1.7vmax, white 1.7vmax) 100% 1;
     color: white;
     font-family: monospace;
 }
@@ -92,4 +91,8 @@ input:focus{
     font-size: 2vmax;
     background-color: rgb(82, 82, 82);
     color: white;
+}
+
+.borderline{
+    border-image: linear-gradient(to left, rgb(82,82,82) 1.7vmax, white 1.7vmax) 100% 1;
 }
