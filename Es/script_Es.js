@@ -1,7 +1,7 @@
 var VocS = [
     "The plant has medicinal properties.",
     "We grew tired of his stale jokes.",
-    "Cyber cafés mushroom after the first one opened in 1998.",
+    "Cyber cafes mushroom after the first one opened in 1998.",
     "Julia has a large collection of beautiful teacup and saucer sets.",
     "The doctor had to operate on his spine.",
     "He has gone through three operations.",
