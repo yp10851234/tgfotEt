@@ -7,17 +7,74 @@ body{
     color: white;
     background-color: rgb(44, 44, 46);
     margin: 0;
-    font-size: 3vmax;
+    font-size: 2.5vmax;
 }
 
-.container{
-    display:grid;
+.UI{
+    display: flex;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
-    align-items: center;
 }
 
-button{
+.rates{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2vmax;
+    background-color: rgb(65, 65, 65);
+    padding: 0.5vmax 1vmax 0.5vmax 1vmax;
+    border-bottom-left-radius: 1vmax;
+}
+
+.session{
+    position: absolute;
+    bottom: 0;
+    font-size: 2vmax;
+    background-color: rgb(65, 65, 65);
+    padding: 0.5vmax 1vmax 2vmax 1vmax;
+    border-top-left-radius: 1vmax;
+    border-top-right-radius: 1vmax;
+}
+
+.sentence{
+    background-color: rgb(82, 82, 82);
+    padding: 1vmax;
+    margin: 1vmax;
+    border-radius: 1vmax;
+}
+
+.textline{
+    position: relative;
+    background-color: rgb(82,82,82);
+}
+
+.textbox{
+    background-color: rgb(82,82,82);
+    font-size: 2.5vmax;
+    padding: 0;
+    margin: 0;
+    margin-left:-0.05vmax;
+    border: none;
+    border-bottom:3px solid white;
+    color: white;
+    font-family: monospace;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.wrong{
+    color:rgb(255, 115, 0);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.buttons button{
     margin: 2vmax;
     padding: 1vmax;
     font-size: 5vmax;
@@ -27,10 +84,123 @@ button{
     color: white;
 }
 
-button:hover{
+.buttons button:hover, .back:hover, .infobutton:hover, .configbutton:hover, .hideinfo:hover, .hideconfig:hover{
     background-color: rgb(100, 100, 100);
 }
 
-button:focus{
+.buttons button:focus, .back:focus, .infobutton:focus, .configbutton:focus, .hideinfo:focus, .hideconfig:focus{
     background-color: rgb(150, 150, 150);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5vmax 1vmax 0.5vmax 1vmax;
+    border: none;
+    border-bottom-right-radius: 1vmax;
+    font-size: 2vmax;
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
+
+.borderline{
+    border-image: linear-gradient(to left, rgb(82,82,82) 1.4vmax, white 1.4vmax) 100% 1;
+}
+
+.infobutton{
+    position: absolute;
+    padding: 0vmax 1.2vmax 0vmax 1.2vmax;
+    font-size: 3vmax;
+    font-weight: 900;
+    color: white;
+    border: none;
+    border-radius: 5vmax;
+    background-color: rgb(65, 65, 65);
+    bottom: 1vmax;
+    right: 1vmax;
+}
+
+.configbutton{
+    position: absolute;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    padding: 2.12vmax;
+    border-radius: 5vmax;
+    bottom: 1vmax;
+    right: 7vmax;
+}
+
+.info, .config{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 100vh 100vw;
+    margin: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.infotab, .configtab{
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    background-color: rgb(82, 82, 82);
+    border-radius: 1vmax;
+}
+
+.hideinfo, .hideconfig{
+    position: absolute;
+    top: calc(20vh + 2vmax);
+    right: calc(20vw + 2.5vmax);
+    font-size: 2vmax;
+    padding: 0 0.8vmax 0.3vmax 0.8vmax;
+    border: none;
+    border-radius: 5vmax;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.infocontent, .configcontent{
+    position: absolute;
+    width: 58vw;
+    height: 58vh;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding: 2vmax;
+    margin: 1vh 1vw 1vh 1vw;
+    white-space: pre-wrap;
+    font-size: 1.5vmax;
+    color: white;
+    text-align: left;
+}
+
+textarea{
+    outline: 0;
+    resize: none;
+    background-color: rgb(68, 68, 68);
+    border: none;
+    border-radius: 1vmax;
+    padding: 0.5vmax;
+    color: white;
+    font-size: 3vmax;
+}
+
+textarea:focus{
+    outline: 0;
+}
+
+#Ssvg{
+    width: 3vmax;
+    height: 3vmax;
+    position: absolute;
+    top: 0.6vmax;
+    left: 0.6vmax;
+    pointer-events: none;
 }

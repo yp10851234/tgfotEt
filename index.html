@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
-        <title>Document</title>
+        <title>tgfotEt v1.5</title>
     </head>
     <body>
-        <div class="container" id="container">
-            <button class="S" id="S" onclick="window.location.href='/Es/index_Es.html'">hi</button>
-        </div>
+        <div class="UI" id="UI"></div>
+        <button class="infobutton" id="infobutton" onclick="showinfo()">?</button>
+        <button class="hide configbutton" id="configbutton" onclick="showconfig()"><object data="s.svg" id="Ssvg"></object></button>
+        <button class="hide" id="info" onclick="hideinfo()"></button>
+        <button class="hide" id="config" onclick="hideconfig()"></button>
+        <div id="infocontainer"></div>
+        <div id="configcontainer"></div>
     </body>
 </html>
