@@ -49,7 +49,15 @@ var VocS = [
 var MonthlySC = [
     "From late March to early May, tulip fields in the Netherlands burst into bloom. A riot of color carpets the land. Keukenhof Gardens, lying near the town of Lisse, possess the best display of not only tulips but also many other beautiful flowers. Visitors can enjoy a delightful flower parade of 800 varieties of tulips as it passes by the gardens.",
     "Gorgeous flower fields are not only found around Lisse. You can find elegant tulips in the Netherlands' capital, Amsterdam, as well. It hosts a phenomenal tulip festival, during which you can take in vibrant colors and the scent of tulips in all public areas and in the gardens of the city's museums and hotels.",
-    "Few things are as wonderful as visiting a beautiful natural place, breathing the fresh air and marveling at the landscape. But enjoying nature comes at a price. People can love a place to death if they aren't careful. There should be rules to keep people from accidentally harming nature. Seven principles are thus introduced to encourage people to both enjoy and protect the great outdoors. Plan ahead, hike and camp on surfaces that don't damage easily, and throw away waste properly. Besides, leave what you find, reduce campfire danger, respect wildlife, and be kind to other visitors. Following these principles can help everyone share the outdoors comfortably. We all need to take care of the earth we know and love."
+    "Few things are as wonderful as visiting a beautiful natural place, breathing the fresh air and marveling at the landscape.",
+    "But enjoying nature comes at a price.",
+    "People can love a place to death if they aren't careful.",
+    "There should be rules to keep people from accidentally harming nature.",
+    "Seven principles are thus introduced to encourage people to both enjoy and protect the great outdoors.",
+    "Plan ahead, hike and camp on surfaces that don't damage easily, and throw away waste properly.",
+    "Besides, leave what you find, reduce campfire danger, respect wildlife, and be kind to other visitors.",
+    "Following these principles can help everyone share the outdoors comfortably.",
+    "We all need to take care of the earth we know and love."
 ];
 
 var SentenceP = [
@@ -152,6 +160,15 @@ function hideconfig(){
     document.getElementById("configcontainer").innerHTML = "";
     document.getElementById("config").classList.remove("config");
     document.getElementById("config").classList.add("hide");
+    if(Page == 'p'){
+        var TotalPhrases = remainingsentences(phr_index) + SessionCompletedSentences;
+        document.getElementById("session").innerHTML = 'Session:' + session + ' &nbsp Completed:' + SessionCompletedSentences + '/' + TotalPhrases;
+    }
+    else{
+        var TotalBlanks = remainingblanks() + SessionCompletedBlanks;
+        var TotalSentences = remainingsentences(CurrentSentence) + SessionCompletedSentences;
+        document.getElementById("session").innerHTML = 'Session:' + session + ' &nbsp Blanks Filled In:' + SessionCompletedBlanks + '/' + TotalBlanks + ' &nbsp Sentences Completed:' + SessionCompletedSentences + '/' + TotalSentences;
+    }
 }
 
 function TobVoc(){
@@ -205,6 +222,8 @@ function TobPhr(){
 function GoBack(){
     document.querySelector("#UI").innerHTML = menu_html;
     document.getElementById("configbutton").classList.add("hide");
+    if(!document.getElementById("refreshbutton").classList.contains("hide"))
+        document.getElementById("refreshbutton").classList.add("hide");
     Page = "m";
     sentences = [];
     NofBlanks = [];
@@ -390,6 +409,8 @@ function checkboxchange(c, n){
     else {
         disabledSentences[n] = 1;
     }
+    if(document.getElementById("refreshbutton").classList.contains("hide"))
+        document.getElementById("refreshbutton").classList.remove("hide");
 }
 
 function endofsentence(){
@@ -451,6 +472,36 @@ function remainingsentences(c){
     return SeL;
 }
 
+function refreshpage(){
+    if(Page!="p"){
+        mode = 0;
+        NofBlanks = [];
+        BlanksPosition = [];
+        WordsInSentences = [];
+        BlankWords = [];
+        init(sentences, NofBlanks, BlanksPosition, WordsInSentences, BlankWords);
+        SessionCompletedBlanks = 0;
+        SessionCompletedSentences = 0;
+        CurrentSentence = 0;
+        while(disabledSentences[CurrentSentence] == 0){
+            CurrentSentence++;
+        }
+        display(WordsInSentences, BlanksPosition, CurrentSentence);
+        document.getElementById("session").innerHTML = 'Session:' + session + ' &nbsp Blanks Filled In:0/' + remainingblanks() + ' &nbsp Sentences Completed:0/' + remainingsentences(CurrentSentence);
+    }
+    else{
+        phr_index = 0;
+        shuffle(list, disabledSentences);
+        SessionCompletedSentences = 0;
+        while(disabledSentences[phr_index] == 0){
+            phr_index++;
+        }
+        document.getElementById("phr").innerHTML = list[0][0];
+        document.getElementById("session").innerHTML = 'Session:' + session + ' &nbsp Completed:0/' + remainingsentences(phr_index);
+    }
+    document.getElementById("refreshbutton").classList.add("hide");
+}
+
 document.addEventListener("keyup", (k) => {
     if(Page=="sv" || Page=="sm" || Page=="sp"){
         var bcclen = BlankWords[CurrentSentence][CurrentBlank][0].length;
@@ -483,6 +534,8 @@ document.addEventListener("keyup", (k) => {
                 if ((enterskip === 0 && k.code !== 'Enter') || (enterskip === 1 && k.code === 'Enter')){
                     CurrentBlank = 0;
                     SessionCompletedSentences++;
+                    if(!document.getElementById("refreshbutton").classList.contains("hide"))
+                        document.getElementById("refreshbutton").classList.add("hide");
                     do{
                         CurrentSentence++;
                         if(CurrentSentence === sentences.length){

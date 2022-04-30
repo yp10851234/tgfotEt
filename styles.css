@@ -84,11 +84,11 @@ input:focus{
     color: white;
 }
 
-.buttons button:hover, .back:hover, .infobutton:hover, .configbutton:hover, .hideinfo:hover, .hideconfig:hover{
+button:hover:not(#info, #config){
     background-color: rgb(100, 100, 100);
 }
 
-.buttons button:focus, .back:focus, .infobutton:focus, .configbutton:focus, .hideinfo:focus, .hideconfig:focus{
+button:focus:not(#info, #config){
     background-color: rgb(150, 150, 150);
 }
 
@@ -121,14 +121,22 @@ input:focus{
     right: 1vmax;
 }
 
-.configbutton{
+.configbutton, .refreshbutton{
     position: absolute;
     background-color: rgb(65, 65, 65);
     border: none;
     padding: 2.12vmax;
     border-radius: 5vmax;
+}
+
+.configbutton{
     bottom: 1vmax;
     right: 7vmax;
+}
+
+.refreshbutton{
+    left: calc(50vw - 2.12vmax);
+    top: 0.5vmax;
 }
 
 .info, .config{
@@ -202,5 +210,14 @@ textarea:focus{
     position: absolute;
     top: 0.6vmax;
     left: 0.6vmax;
+    pointer-events: none;
+}
+
+#Rsvg{
+    width: 3vmax;
+    height: 3vmax;
+    position: absolute;
+    top: 0.55vmax;
+    left: 0.45vmax;
     pointer-events: none;
 }
