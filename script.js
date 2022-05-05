@@ -35,7 +35,7 @@ var VocS = [
     "Living in the concrete jungle, people have become quarrelsome.",
     "He bandaged up his cuts.",
     "I like to crunch through the park on dry fallen leaves.",
-    "He make a quick dodge to the let.",
+    "He make a quick dodge to the left.",
     "A hawk hovered in the air before swooping on its prey.",
     "He lay down beneath a tree and found a huge hive hung above.",
     "He hushed the crowd by raising his hands and then gave his speech.",
