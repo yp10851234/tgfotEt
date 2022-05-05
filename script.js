@@ -39,7 +39,7 @@ var VocS = [
     "A hawk hovered in the air before swooping on its prey.",
     "He lay down beneath a tree and found a huge hive hung above.",
     "He hushed the crowd by raising his hands and then gave his speech.",
-    "Her neighbors is a Peeping Tom, who is always spying on her.",
+    "Her neighbor is a Peeping Tom, who is always spying on her.",
     "Pickles go well with rice.",
     "The Chinese like to guess riddles attached to lanterns on the Lantern Festival.",
     "The police are searching for the robbers door by door.",
