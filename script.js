@@ -29,7 +29,7 @@ var VocS = [
     "I felt a stab of envy when I saw him awarded the prize.",
     "The days lengthen in summer.",
     "The statue was built to commemorate America's independence.",
-    "Seeing a black cat with while paws is regarded as bad luck.",
+    "Seeing a black cat with white paws is regarded as bad luck.",
     "He let out a big yawn.",
     "They had a bitter quarrel about/over money years ago.",
     "Living in the concrete jungle, people have become quarrelsome.",
