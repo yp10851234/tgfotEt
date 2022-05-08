@@ -47,13 +47,7 @@ var VocS = [
 ];
 
 var MonthlySC = [
-    "From late March to early May, tulip fields in the Netherlands burst into bloom.",
-    "A riot of color carpets the land.",
-    "Keukenhof Gardens, lying near the town of Lisse, possess the best display of not only tulips but also many other beautiful flowers.",
-    "Visitors can enjoy a delightful flower parade of 800 varieties of tulips as it passes by the gardens.",
-    "Gorgeous flower fields are not only found around Lisse.",
-    "You can find elegant tulips in the Netherlands' capital, Amsterdam, as well.",
-    "It hosts a phenomenal tulip festival, during which you can take in vibrant colors and the scent of tulips in all public areas and in the gardens of the city's museums and hotels.",
+    "From late March to early May, tulip fields in the Netherlands burst into bloom. A riot of color carpets the land. Keukenhof Gardens, lying near the town of Lisse, possess the best display of not only tulips but also many other beautiful flowers. Visitors can enjoy a delightful flower parade of 800 varieties of tulips as it passes by the gardens. Gorgeous flower fields are not only found around Lisse. You can find elegant tulips in the Netherlands' capital, Amsterdam, as well. It hosts a phenomenal tulip festival, during which you can take in vibrant colors and the scent of tulips in all public areas and in the gardens of the city's museums and hotels.",
     "Few things are as wonderful as visiting a beautiful natural place, breathing the fresh air and marveling at the landscape.",
     "But enjoying nature comes at a price.",
     "People can love a place to death if they aren't careful.",
