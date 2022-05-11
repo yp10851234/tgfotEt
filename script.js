@@ -48,15 +48,7 @@ var VocS = [
 
 var MonthlySC = [
     "From late March to early May, tulip fields in the Netherlands burst into bloom. A riot of color carpets the land. Keukenhof Gardens, lying near the town of Lisse, possess the best display of not only tulips but also many other beautiful flowers. Visitors can enjoy a delightful flower parade of 800 varieties of tulips as it passes by the gardens. Gorgeous flower fields are not only found around Lisse. You can find elegant tulips in the Netherlands' capital, Amsterdam, as well. It hosts a phenomenal tulip festival, during which you can take in vibrant colors and the scent of tulips in all public areas and in the gardens of the city's museums and hotels.",
-    "Few things are as wonderful as visiting a beautiful natural place, breathing the fresh air and marveling at the landscape.",
-    "But enjoying nature comes at a price.",
-    "People can love a place to death if they aren't careful.",
-    "There should be rules to keep people from accidentally harming nature.",
-    "Seven principles are thus introduced to encourage people to both enjoy and protect the great outdoors.",
-    "Plan ahead, hike and camp on surfaces that don't damage easily, and throw away waste properly.",
-    "Besides, leave what you find, reduce campfire danger, respect wildlife, and be kind to other visitors.",
-    "Following these principles can help everyone share the outdoors comfortably.",
-    "We all need to take care of the earth we know and love.",
+    "Few things are as wonderful as visiting a beautiful natural place, breathing the fresh air and marveling at the landscape. But enjoying nature comes at a price. People can love a place to death if they aren't careful. There should be rules to keep people from accidentally harming nature. Seven principles are thus introduced to encourage people to both enjoy and protect the great outdoors. Plan ahead, hike and camp on surfaces that don't damage easily, and throw away waste properly. Besides, leave what you find, reduce campfire danger, respect wildlife, and be kind to other visitors. Following these principles can help everyone share the outdoors comfortably. We all need to take care of the earth we know and love.",
     "Traveling is the perfect way to find amazement and inspiration in my life. I really enjoyed my memorable trip to France last year except for one thing - French greetings. Once, I was introduced to one of my cousin's girlfriends. Like most Taiwanese people I smiled and said hello, but the French girl grabbed both my shoulders and kissed me on the cheek! As it was happening, I was astonished and didn't know what I should do. I responded by just standing rooted to the spot and held my breath. I felt like a dummy! Such was the embarrassment that I came to the realization that foreign customs and habits could be strikingly different from my own. In order to have the best traveling experience, I have to be open to new things and embrace the feeling of culture shock. That can teach me so much more than books ever will!"
 ];
 
