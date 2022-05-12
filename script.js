@@ -53,8 +53,8 @@ var MonthlySC = [
 ];
 
 var SentenceP = [
-    "aa aa aa aa",
-    "bb bb bb bb"
+    "In recent years, there have been more and more super typhoons, which often cause serious damage. When a typhoon strikes, we should prepare enough food and stay indoors. If necessary, we should quickly move to a safe place.",
+    "Since the High Speed Rail started to run in 2007, it has become one of the most convenient and fastest means of transportation in Taiwan. For those who emphasize efficiency in the workplace, the High Speed Rail is definitely the first choice for business trips."
 ];
 
 var list = [
