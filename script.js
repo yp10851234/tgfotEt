@@ -1089,15 +1089,7 @@ document.addEventListener("keyup", (k) => {
     if(Page=="sv" || Page=="sm" || Page=="sp"){
         var bcclen = BlankWords[CurrentSentence][CurrentBlank][0].length;
         var lastchar = BlankWords[CurrentSentence][CurrentBlank][0][bcclen - 1];
-        if(k.code==='Tab'){
-            var bcc0 = BlankWords[CurrentSentence][CurrentBlank][0];
-            if(PMarks.includes(lastchar)) bcc0 = bcc0.substring(0, bcclen - 1);
-            document.getElementById("textbox" + CurrentBlank).value = bcc0;
-            document.getElementById("textbox" + CurrentBlank).classList.add("wrong");
-            Failed++;
-            Successful--;
-        }
-        else if(k.code==='Enter'){
+        if(k.code==='Tab' || k.code === 'Enter'){
             var bcc0 = BlankWords[CurrentSentence][CurrentBlank][0];
             if(PMarks.includes(lastchar)) bcc0 = bcc0.substring(0, bcclen - 1);
             document.getElementById("textbox" + CurrentBlank).value = bcc0;
@@ -1107,7 +1099,7 @@ document.addEventListener("keyup", (k) => {
         }
         var CurrentBlankValue=document.getElementById("textbox" + CurrentBlank).value;
         if(PMarks.includes(lastchar)) CurrentBlankValue += lastchar;
-        if(CurrentBlankValue === BlankWords[CurrentSentence][CurrentBlank][0]){
+        if(CurrentBlankValue === BlankWords[CurrentSentence][CurrentBlank][0] && (!document.getElementById("textbox" + CurrentBlank).classList.contains("wrong") || (k.code==='Tab' || k.code === 'Enter'))){
             Successful++;
             SessionCompletedBlanks++;
             if((CurrentBlank !== BlankWords[CurrentSentence].length - 1) || (enterskip === 1 && k.code === 'Enter') || (enterskip === 0 && k.code !== 'Enter'))
@@ -1135,6 +1127,7 @@ document.addEventListener("keyup", (k) => {
             }
             document.getElementById("textbox" + CurrentBlank).focus();
         }
+
         if(k.code==='Enter' && enterskip === 0 && enterskip2 === 1){
             enterskip = 1;
             enterskip2 = 0;
