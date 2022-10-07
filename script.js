@@ -305,7 +305,7 @@ var list = [
     ["誘惑", "temptation"],
     ["可信度", "trustworthiness"],
     ["存錢", "deposit"],
-    ["紀念 (c-)", "commermorate"],
+    ["紀念 (c-)", "commemorate"],
     ["通勤者", "commuter"],
     //##########################################
     ["習慣於 (be u-)", "be used to Ving"],
