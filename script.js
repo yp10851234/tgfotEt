@@ -900,13 +900,10 @@ function display(w, b, c){
         if(b[c][i] == 1){
             var tbl = w[c][i].length;
             if(PMarks.includes(w[c][i][tbl-1])){
-                if(tbl === 2)
-                    document.getElementById("textline").innerHTML += '<input class="textbox borderline" id="textbox' + blankindex + '" size="' + (tbl - 1) + '" maxlength="' + (tbl - 1) + '" autocomplete="off" onkeypress="return event.key != \' \'"></input>' + w[c][i][tbl-1] + ' ';
-                else
-                    document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" size="' + (tbl - 2) + '" maxlength="' + (tbl - 1) + '" autocomplete="off" onkeypress="return event.key != \' \'"></input>' + w[c][i][tbl-1] + ' ';
+                document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" style="width:calc(1.4vmax * ' + (tbl - 1) + ');" maxlength="' + (tbl - 1) + '" autocomplete="off" onkeypress="return event.key != \' \'"></input>' + w[c][i][tbl-1] + ' ';
             }
             else{
-                document.getElementById("textline").innerHTML += '<input class="textbox borderline" id="textbox' + blankindex + '" size="' + tbl + '" maxlength="' + tbl + '" autocomplete="off" onkeypress="return event.key != \' \'"></input>';
+                document.getElementById("textline").innerHTML += '<input class="textbox" id="textbox' + blankindex + '" style="width:calc(1.4vmax * ' + tbl + ');" maxlength="' + tbl + '" autocomplete="off" onkeypress="return event.key != \' \'"></input> ';
             }
             blankindex++;
         }
