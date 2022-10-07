@@ -654,6 +654,7 @@ var list = [
 var infoContent =
 "Tool for reviewing English exams\n\
 tgfotEt v1.5\n\
+Designed for laptop/computer use only\n\
 Instructions: Type in the blank words, press Enter to show the answer\n\n\
 If you have found a bug or issue that you would like to report,\n\
 or you have any inconvenieces using tgfotEt,\n\
@@ -940,6 +941,11 @@ function nextphr(b){
     else{
         Successful++;
         disabledSentences[phr_index]--;
+    }
+    var alldone = disabledSentences.every(v => {return v===0});
+    if(alldone){
+        GoBack();
+        return;
     }
     do {
         phr_index++;
