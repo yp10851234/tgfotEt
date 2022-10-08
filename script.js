@@ -202,7 +202,7 @@ var MonthlySC = [
 var SentenceP = [
     "It was a stifling/scorching/sultry/sweltering afternoon. The afternoon's heat was suffocating that day. I was going to purchase plenty of food for dinner. Suddenly, an elderly woman fell down and all her fruits slipped out of the shopping cart, rolling downward the incline. Seeing the woman at her wits' end weeping over the real mess, I stepped forward comforting her and settling the problem for her. The woman was a total stranger, and my act of kindness, though seemingly insignificant, surprisingly caused a chain reaction. Some bystanders/onlookers did likewise, coming along and lending a helping hand. The woman finally survived the embarrassment and I went home in great satisfaction.",
 
-    "I am in the habit of going to the bathroom after waking up to wash my face. I usually leave the water running until I freshen myself up. The other day, I heard water rationing was to be introduced, which I didn't take seriously. Suffering all the inconveniences brought by limited water supply, I came to the realization that I could never wastw water like in the past. My morning water ritual should be dwarfed by the conservation of precious water, definitely."
+    "I am in the habit of going to the bathroom after waking up to wash my face. I usually leave the water running until I freshen myself up. The other day, I heard water rationing was to be introduced, which I didn't take seriously. Suffering all the inconveniences brought by limited water supply, I came to the realization that I could never waste water like in the past. My morning water ritual should be dwarfed by the conservation of precious water, definitely."
 ];
 
 var list = [
