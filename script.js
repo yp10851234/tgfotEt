@@ -226,7 +226,7 @@ var list = [
     ["目的", "aim"],
     ["爲了目的是 (a-)", "with the aim of"],
     ["爲了目的是 (p-)", "for the purpose to"],
-    ["爲了目的是 (v-)", "with the view of"],
+    ["爲了目的是 (v-)", "with a view to"],
     ["爲了目的是 (o-)", "in order to"],
     ["衝動", "impulse"],
     ["浮躁", "impulsive"],
