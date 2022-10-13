@@ -658,7 +658,7 @@ Designed for laptop/computer use only\n\
 Instructions: Type in the blank words, press Enter to show the answer\n\n\
 If you have found a bug or issue that you would like to report,\n\
 or you have any inconvenieces using tgfotEt,\n\
-please contact at yp10851234@yphs.tp.edu.tw";
+please contact at yp11131112@yphs.tp.edu.tw";
 // Change logs\n\n\
 // v1.5 (Released 29/04/22)\n\
 // Added configurations for easier management\n\
