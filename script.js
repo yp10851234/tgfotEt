@@ -219,8 +219,56 @@ var MonthlySC = [
 ];
 
 var SentenceP = [
-    "Nothing here",
-    "Nothing here"
+    "It occurs to me that the midterm is just one week away.",
+    "It dawned on me that health is above everything.",
+    "A strange idea flashed through Danny's mind.",
+    "Speaking of great artists, da Vinci is the first that comes to my mind.",
+    "What she said finally dawns on me.",
+    "When he was about to go to bed, it occurred to him that he hadn't finished his homework yet.",
+    "It was generous of her to donate all her scholarship to charities.",
+    "It was considerate of the girl to give her seat to an old lady.",
+    "It was a stupid idea to go hiking on a rainy day.",
+    "It was so careless of me to leave my tablet in the cab.",
+    "For many students nowadays, it is a great challenge to strike a balance between studies and extracurricular activities. Effective time management is the most important lesson that every responsible student has to learn.",
+    "It is reported in today's newspaper that the oil price is rising tomorrow.",
+    "They say the principal has changed his/her mind not to go on the graduation trip with the senior students.",
+    "It has been decided that the graduation ceremony will be held on the first Saturday in June.",
+    "It is (generally) believed that optimistic people are healthier than pessimistic people.",
+    "Legend has it that Ho-yi shot nine suns down from the sky.",
+    "It is said that firstborns are more likely to become leaders.",
+    "Any serious mistake may cost you your life.",
+    "It takes good taste to know how to appreciate these works of art.",
+    "The good-for-nothing kid cost his mother many sleepless nights.",
+    "It requires good eyesight to be a pilot.",
+    "He made a lot of money at the cost of his health.",
+    "This investment cost him savings of his whole life.",
+    "It is important for people of all ages to get enough sleep. It is said that long-term sleep deprivation will have a negative effect on the brain.",
+    "It is dangerous to have the Internet as the only source of information. This is because not all the information found online is correct.",
+    "It is said that green tea helps to prevent cancer. Therefore, it is good for your health to have a cup of green tea every day.",
+    "It takes talent, hard work, and patience to become a great pianist. It dawned on me that it is not so easy to cultivate musicians.",
+    "It was because he was under age that they wouldn't let him get into the bar.",
+    "It is by working hard that he becomes what he is today.",
+    "It was under the sofa in the living room that Anna found her lost diamond ring.",
+    "It was on her eighteenth birthday that Helen got her driving license.",
+    "It was because she kept calm that the rescue team could find where she was.",
+    "It was at the last moment that I handed in my final report.",
+    "I think he has learned his lesson and that we should stop blaming him.",
+    "My grandmother believes that there is life after death and that what we do in this life will decide what we will become in the next life.",
+    "That green tea is good for health has been proved.",
+    "That smoking has a lot to do with lung cancer is a well-known fact.",
+    "The con man claimed he was a policeman and that he had to come in and take a look at my house.",
+    "He claimed that he ran a computer company and that he had a doctoral degree from Harvard University.",
+    "The news that oil prices kept rising made people both angry and worried.",
+    "We can't ignore the fact that global climate is changing.",
+    "You should ride your bike to school in that it helps you lose weight.",
+    "This movie is very popular in that the audience feel that life is full of hopes after they watch it.",
+    "The news that the airport would be shut down turned out to be false.",
+    "We must take seriously the fact that teenagers are addicted to the Internet.",
+    "With so many resources now, learning foreign languages seems to be easier than before. It is one's motivation that decides if one can learn foreign languages well.",
+    "The fact that John left the school team both surprised and disappointed us. It was John that allowed us to win the championship three years in a row.",
+    "We all think that Steve is the best candidate to be stationed in London. It is his personality and excellent English proficiency that make him stand out.",
+    "I think you may be addicted to social media. It worries me that you never stop checking if there are new messages coming in."
+
 ];
 
 var list = [
@@ -258,7 +306,7 @@ New updtate coming in November :)";
 // v1.0 (Released 09/03/22)\n\
 // First version\n\
 // Created domain for tgfotEt\n\n\
-var menu_html = '<div class="buttons" id="buttons"><button class="bVoc" id="bVoc" onclick="TobVoc()">Voc U10</button><button class="bMon" id="bMon" onclick="TobMon()">Voc U11</button><button class="bSeP" id="bSeP" onclick="TobSeP()">Nothing</button><button class="bPhr" id="bPhr" onclick="TobPhr()">Nothing</button></div>'
+var menu_html = '<div class="buttons" id="buttons"><button class="bVoc" id="bVoc" onclick="TobVoc()">Voc U10</button><button class="bMon" id="bMon" onclick="TobMon()">Voc U11</button><button class="bSeP" id="bSeP" onclick="TobSeP()">Pattern 52-58</button><button class="bPhr" id="bPhr" onclick="TobPhr()">Nothing</button></div>'
 var sentences = [];
 var CurrentSentence = 0;
 var NofBlanks = [];
