@@ -323,7 +323,6 @@ var list = [
     ["忽略", "neglect"],
     ["自私(n.)", "selfishness"],
     ["怠忽", "neglect"],
-    ["忽略", "neglect"],
     ["職守", "duty"],
     ["委員會", "committee"],
     ["議題", "issue"],
