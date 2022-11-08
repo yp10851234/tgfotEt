@@ -113,10 +113,7 @@ var VocS = [
     "With a few strokes, the movie star signed her name.",
     "What is your best stroke when you swim?",
     "She suffered a stroke because a blood vessel in her brain was blocked up.",
-    "When thinking, he has a habit of stroking his beard."
-];
-
-var MonthlySC = [
+    "When thinking, he has a habit of stroking his beard.",
     "The threat of the disease has been greatly exaggerated.",
     "Could you clarify the difference between the two?",
     "The Secretary of State issued a clarification on this matter.",
@@ -174,14 +171,12 @@ var MonthlySC = [
     "The view of the setting sun on the shore is fantastic.",
     "Young children sometimes can't distinguish between fantasy and reality.",
     "Many commercials are inserted into TV programs.",
-    "The company decides to spend one million dollars on",
-    "advertisements,  including  newspaper inserts.",
+    "The company decides to spend one million dollars on advertisements,  including  newspaper inserts.",
     "The smartphone has a slot for insertion of a SIM card.",
     "Did you get the promotion you wanted?",
     "He is in charge of the promotion of the new product.",
     "The promotion of safe sex is extremely important.",
-    "The Tourism Bureau spends a lot of money producing",
-    "promotional videos to attract tourists.",
+    "The Tourism Bureau spends a lot of money producing promotional videos to attract tourists.",
     "They made a thorough search of the building but found nothing.",
     "The room has been thoroughly cleaned.",
     "I can't use my cellphone now. I am charging the battery.",
@@ -218,7 +213,7 @@ var MonthlySC = [
     "The editors are making some revisions to the text."
 ];
 
-var SentenceP = [
+var MonthlySC = [
     "It occurs to me that the midterm is just one week away.",
     "It dawned on me that health is above everything.",
     "A strange idea flashed through Danny's mind.",
@@ -269,6 +264,23 @@ var SentenceP = [
     "We all think that Steve is the best candidate to be stationed in London. It is his personality and excellent English proficiency that make him stand out.",
     "I think you may be addicted to social media. It worries me that you never stop checking if there are new messages coming in."
 
+];
+
+var SentenceP = [
+    
+    "A decade ago, people of all ages in Taiwan were suddenly woken by an enormous tremble, and I was no exception.",
+    "As soon as I turned on the TV sleepily, the horrible scene instantly dispelled my lethargy, throwing me into deep disbelief and astonishment.",
+    "Flesh, blood, limbs, bone and rubble were splattered over the street.",
+    "Simultaneously, a majestic skyscraper was collapsing to debris, making the air pervaded by ashes and dusts.",
+    "Numerous victims were lying on the ground hopelessly, ghastly scarlet blood oozing/trickling from appalling wounds.",
+    "Worst still, a man writhing in agony shrieked bitterly, \"My mom, my children...\"",
+    "His wife also bursting into tears of bereavement tried to calm him down but failed.",
+    "Firefighters with shovels hurriedly dug rubble higher than them bravely despite the fact that their effort seemed futile.",
+    "Doctors and nurses rushed back and forth anxiously, trying to turn the tide in the life-and-death tug of war, saving patients with no signs of recovery.",
+    "If an ignorant traveler past by the spot, he might be puzzled whether he is visiting Taiwan, or a purgatory.",
+    "Somehow, the remote control dropped silently from my shaking hand.",
+    "My mom standing next to me knelt down, her face cracking into lines of sorrow.",
+    "That was the day Taiwan encountered 921 earthquake tragedy, which is the most unforgettable news event to me."
 ];
 
 var list = [
@@ -687,7 +699,7 @@ New update coming in November :)";
 // v1.0 (Released 09/03/22)\n\
 // First version\n\
 // Created domain for tgfotEt\n\n\
-var menu_html = '<div class="buttons" id="buttons"><button class="bVoc" id="bVoc" onclick="TobVoc()">Voc U10</button><button class="bMon" id="bMon" onclick="TobMon()">Voc U11</button><button class="bSeP" id="bSeP" onclick="TobSeP()">Pattern 52-58</button><button class="bPhr" id="bPhr" onclick="TobPhr()">Nothing</button></div>'
+var menu_html = '<div class="buttons" id="buttons"><button class="bVoc" id="bVoc" onclick="TobVoc()">Voc U10,U11</button><button class="bMon" id="bMon" onclick="TobMon()">Pattern 52-58</button><button class="bSeP" id="bSeP" onclick="TobSeP()">Writing</button><button class="bPhr" id="bPhr" onclick="TobPhr()">Nothing</button></div>'
 var sentences = [];
 var CurrentSentence = 0;
 var NofBlanks = [];
