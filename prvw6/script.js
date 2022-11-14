@@ -1,4 +1,4 @@
-const pageid = ['1-1-p2-1', '3-1'];
+const pageid = ['1-1-p2', '1'];
 const homebuttonnames = ["Voc Unit 12", "Voc Unit 13", "Nothing", "Translate(U12,U13)"];
 const homehtml = '<div class="home-button-container"><button class="home-button" onclick="hbt1()">' + homebuttonnames[0] + '</button><button class="home-button" onclick="hbt2()">' + homebuttonnames[1] + '</button><button class="home-button" onclick="hbt3()">' + homebuttonnames[2] + '</button><button class="home-button" onclick="hbt4()">' + homebuttonnames[3] + '</button></div>';
 const infobuttonhtml = '<button class="info-button" onclick="showinfo()"><object data="q.svg" class="q-svg svg" id="q-svg"></object></button>';
