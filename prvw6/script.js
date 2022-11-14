@@ -718,6 +718,7 @@ function blankwords() {
             if (sb[bl[cpage].index[2]] === nobi || ((bl[cpage].index[2] === sb.length || sb[bl[cpage].index[2]] === 0) && sb[bl[cpage].index[2] - 1] === nobi)) {
                 if (bl[cpage].enterskip) {
                     nextsentence();
+                    setstoragedata();
                     return;
                 }
                 else {
@@ -742,6 +743,7 @@ function blankwords() {
             }
             bl[cpage].typeddata++;
             updaterates(bl[cpage].completeddata, bl[cpage].typeddata);
+            setstoragedata();
             return;
         }
         if (e.key === ' ' || e.key === 'Shift' || bl[cpage].enterskip)
@@ -778,6 +780,7 @@ function blankwords() {
                 bl[cpage].index[2] = bl[cpage].blankstart;
                 drawsentence(bl[cpage].typed.join(''), bl[cpage].entered.join(''));
             }
+            setstoragedata();
         }
         else {
             bl[cpage].index[2] = tc + 1;
@@ -893,7 +896,6 @@ function blankwords() {
         sentenceheight = textheight * out.length;
         sentencex = (realw - sentencewidth) / 2, sentencey = (realh - sentenceheight) / 2;
         drawsentence(bl[cpage].typed.join(''), bl[cpage].entered.join(''));
-        setstoragedata();
     }
 
     function initsentence() {
