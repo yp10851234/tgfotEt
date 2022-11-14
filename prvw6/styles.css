@@ -1,0 +1,383 @@
+:root{
+    --bg-color: rgb(44, 44, 46);
+    --div-d-color: rgb(68, 68, 68);
+    --div-color: rgb(82, 82, 82);
+    --div-l-color: rgb(100, 100, 100);
+    --bt-hover-color: rgb(110, 110, 110);
+    --bt-click-color: rgb(150, 150, 150);
+}
+
+*{
+    font-family: monospace;
+    font-size: 1.4vmax;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--div-l-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--div-d-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-color); 
+}
+
+html{
+    margin: 0;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+button{
+    color: white;
+    background-color: var(--div-color);
+    outline: 0;
+    border: 0;
+}
+
+button:hover:not(.info-bg-bt, .config-bg-bt){
+    background-color: var(--bt-hover-color);
+}
+
+button:active:not(.info-bg-bt, .config-bg-bt){
+    background-color: var(--bt-click-color);
+}
+
+.home-button-container{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 2vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-button{
+    padding: 1vmax;
+    font-size: 5vmax;
+    border-radius: 1vmax;
+}
+
+.info-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4vmax;
+    height: 4vmax;
+    border-radius: 4vmax;
+    transform: translate(-50%, -50%);
+}
+
+.config-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4vmax;
+    height: 4vmax;
+    border-radius: 4vmax;
+    transform: translate(-50%, -200%);
+}
+
+.q-svg{
+    position: absolute;
+    width: 5vmax;
+    height: 5vmax;
+    transform: translate(-52%, -50%);
+}
+
+.x-svg{
+    position: absolute;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    transform: translate(-50%, -50%);
+}
+
+.c-svg{
+    position: absolute;
+    width: 3.2vmax;
+    height: 3.2vmax;
+    transform: translate(-50%, -50%);
+}
+
+.svg{
+    pointer-events: none;
+}
+
+.info, .config{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.info-bg-bt, .config-bg-bt{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.info-content, .config-content{
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--div-color);
+    border-radius: 1vmax;
+}
+
+.info-text, .config-text{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    width: calc(100% - 6vmax);
+    height: calc(100% - 6vmax);
+    padding: 3vmax;
+}
+
+.info-ex-bt, .config-ex-bt{
+    position: absolute;
+    top: calc(20vh + 2vmax);
+    right: calc(20vw + 2vmax);
+    width: 3vmax;
+    height: 3vmax;
+    background-color: var(--div-d-color);
+    border-radius: 3vmax;
+}
+
+.bl-config-grid, .tr-config-grid{
+    position: absolute;
+    width: calc(100% - 6vmax);
+    height: calc(100% - 6vmax);
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 0.4vmax;
+    overflow: hidden;
+}
+
+.bl-config-grid *, .tr-config-grid *{
+    border: 0 solid var(--div-d-color);
+}
+
+.bl-config-grid{
+    grid-template-rows: auto auto;
+}
+
+.tr-config-grid{
+    grid-template-rows: auto auto;
+}
+
+.config-innercontent{
+    grid-area: 1 / 2 / -1 / 2;
+    border-width: 0 0 0 0.2vmax;
+    padding: 0 2vmax;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: 3vmax;
+}
+
+.config-segment-t{
+    border-width: 0 0.2vmax 0.2vmax 0;
+}
+
+.config-segment-m{
+    border-width: 0.2vmax 0.2vmax 0.2vmax 0;
+}
+
+.config-segment-b{
+    border-width: 0.2vmax 0.2vmax 0 0;
+}
+
+.back{
+    position: absolute;
+    font-size: 2vmax;
+    padding: 0.5vmax 1vmax;
+    border-bottom-right-radius: 1vmax;
+}
+
+.tr-container{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bl-container{
+    position: absolute;
+    background-color: var(--bg-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tr-chi{
+    font-size: 3vmax;
+    color: white;
+}
+
+.tr-textarea{
+    font-size: 3vmax;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: var(--div-color);
+    resize: none;
+    padding: 1vmax;
+    border-radius: 1vmax;
+    overflow: hidden;
+    width: 60vw;
+    height: 20vh;
+    margin: 1vmax 0;
+}
+
+.rates{
+    position: absolute;
+    font-size: 2vmax;
+    padding: 0.5vmax 1vmax;
+    background-color: var(--div-color);
+    color: white;
+    right: 0;
+    border-bottom-left-radius: 1vmax;
+}
+
+.stats{
+    position: absolute;
+    background-color: var(--div-color);
+    color: white;
+    width: 50vmax;
+    height: 4vmax;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2vmax;
+    border-radius: 1vmax 1vmax 0 0;
+}
+
+.progress{
+    position: relative;
+    width: 40vmax;
+    height: 2vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5vmax;
+    background-color: #8a9895;
+    overflow: hidden;
+}
+
+.progress-filled{
+    width: 0%;
+    height: 100%;
+    background-color: #00997d;
+    border-right: 2px solid #0f4f43;
+    transition: all 0.2s;
+}
+
+.progress-text{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-20%, -50%);
+    font-size: 2vmax;
+}
+
+.reset-button{
+    position: relative;
+    border: 0.3vmax solid rgb(57, 57, 57);
+    border-radius: 1vmax;
+    font-size: 2vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 115, 0);
+}
+
+.switch-container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.switch-box{
+    width: 25vmax;
+    height: 4vmax;
+    padding: 1vmax;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 3vmax;
+    height: 1.5vmax;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5vmax;
+    background-color: rgb(159, 159, 159);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 1.2vmax;
+    width: 1.2vmax;
+    left: 0.225vmax;
+    bottom: 0.15vmax;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+input:checked + .slider {
+    background-color: #1bcb96;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(1.35vmax);
+}
+
+.incorrect{
+    color: rgb(255, 115, 0);
+}
