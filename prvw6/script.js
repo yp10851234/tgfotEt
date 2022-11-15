@@ -92,7 +92,7 @@ blank[0] = [
     "To our great delight, our team won the game.",
     "Her performance delighted everyone in the house.",
     "Thank you for a delightful evening.",
-    "We were all delighted to hear of the news of Victory.",
+    "We were all delighted to hear of the news of victory.",
     "The dishes are all in the kitchen cabinet.",
     "The cabinet will be reshuffled soon.",
     "Many of our students do voluntary work in hospitals.",
