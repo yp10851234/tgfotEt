@@ -246,7 +246,7 @@ blank[1] = [
     "Hotels have geared up for the coming holiday season.",
     "When my father saw my school report, he got into a rage.",
     "My father flew into a rage.",
-    "The rage of the tornado Sweeps to destruction all that lies in its path.",
+    "The rage of the tornado sweeps to destruction all that lies in its path.",
     "The boss raged at his absent-minded secretary.",
     "The typhoon raged across southern Japan.",
     "The subject of this painting is the cruelty of war.",
