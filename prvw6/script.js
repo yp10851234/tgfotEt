@@ -485,7 +485,7 @@ trans[0] = [
     ["a. 火爆的", "explosive"],
     ["a. 易引起爭論的", "explosive"],
     ["n. 爆裂物", "explosive"],
-    ["vi. /", "vt. 爆炸 explode"],
+    ["vi./vt. 爆炸 ", "explode"],
     ["a. 潮溼的", "damp"],
     ["vt. 弄溼、打溼", "damp"],
     ["vt. 潑冷水、減弱氣勢", "damp"],
