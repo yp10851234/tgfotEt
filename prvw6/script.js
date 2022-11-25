@@ -1,4 +1,4 @@
-const pageid = ['1-1-p2-0', '1'];
+const pageid = ['1-1-p2-0', '2'];
 const homebuttonnames = ["Voc Unit 12", "Pattern p164 p171", "Writing", "Translate(U12)"];
 const homehtml = '<div class="home-button-container"><button class="home-button" onclick="hbt1()">' + homebuttonnames[0] + '</button><button class="home-button" onclick="hbt2()">' + homebuttonnames[1] + '</button><button class="home-button" onclick="hbt3()">' + homebuttonnames[2] + '</button><button class="home-button" onclick="hbt4()">' + homebuttonnames[3] + '</button></div>';
 const infobuttonhtml = '<button class="info-button" onclick="showinfo()"><object data="q.svg" class="q-svg svg" id="q-svg"></object></button>';
@@ -174,11 +174,11 @@ blank[2] = [
     "Flesh, blood, limbs, bone and rubble were splattered over the street.",
     "Simultaneously, a majestic skyscraper was collapsing to debris, making the air pervaded by ashes and dusts.",
     "Numerous victims were lying on the ground hopelessly, ghastly, scarlet blood oozing/trickling from appalling wounds.",
-    "Worst still, a man writhing in agony shrieked bitterly, \"My mom, my children...\"",
+    "Worse still, a man writhing in agony shrieked bitterly, \"My mom, my children...\"",
     "His wife also bursting into tears of bereavement tried to calm him down but failed.",
     "Firefighters with shovels hurriedly dug rubble higher than them bravely despite the fact that their effort seemed futile.",
     "Doctors and nurses rushed back and forth anxiously, trying to turn the tide in the life-and-death tug of war, saving patients with no signs of recovery.",
-    "If an ignorant traveler past by the spot, he might be puzzled whether he is visiting Taiwan, or a purgatory.",
+    "If an ignorant traveler passed by the spot, he might be puzzled whether he is visiting Taiwan, or a purgatory.",
     "Somehow, the remote control dropped silently from my shaking hand.",
     "My mom standing next to me knelt down, her face cracking into lines of sorrow.",
     "That was the day Taiwan encountered 921 earthquake tragedy, which is the most unforgettable news event to me.",
