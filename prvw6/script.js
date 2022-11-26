@@ -250,7 +250,7 @@ trans[0] = [
     ["n. 獎賞、報酬", "reward"],
     ["phr. 做為報酬", "in reward"],
     ["vt. 獎賞、報酬", "reward"],
-    ["a. 有成就感的、值得做的", " rewarding"],
+    ["a. 有成就感的、值得做的", "rewarding"],
     ["n. 帝國", "empire"],
     ["n. 帝王", "emperor"],
     ["n. 凝視的目光", "gaze"],
