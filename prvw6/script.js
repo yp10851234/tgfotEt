@@ -242,7 +242,7 @@ trans[0] = [
     ["vi./vt. 離婚", "divorce"],
     ["a. 離婚的", "divorced"],
     ["vi. 註冊", "register"],
-    ["vt. 登記", " register"],
+    ["vt. 登記", "register"],
     ["vt. 以掛號寄", "register"],
     ["n. 登記簿、名單", "register"],
     ["n. 收銀機", "cash register"],
