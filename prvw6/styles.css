@@ -31,14 +31,19 @@
   background: var(--bg-color); 
 }
 
+input::-webkit-input-placeholder {
+    color: rgb(255, 255, 255); /*Change the placeholder color*/
+    opacity: 0.4; /*Change the opacity between 0 and 1*/
+}
+
 html{
     margin: 0;
-    overflow: hidden;
-    max-height: 100vh;
 }
 
 body{
     background-color: var(--bg-color);
+    overflow: hidden;
+    max-height: 100vh;
 }
 
 button{
@@ -61,6 +66,8 @@ button:active:not(.info-bg-bt, .config-bg-bt){
     display: grid;
     justify-content: center;
     align-content: center;
+    grid-template-columns: 50% 50%;
+    /* white-space: nowrap; */
     gap: 2vmax;
     top: 50%;
     left: 50%;
@@ -69,7 +76,7 @@ button:active:not(.info-bg-bt, .config-bg-bt){
 
 .home-button{
     padding: 1vmax;
-    font-size: 4vmax;
+    font-size: min(4vmax, 4vw);
     border-radius: 1vmax;
 }
 
@@ -176,11 +183,11 @@ button:active:not(.info-bg-bt, .config-bg-bt){
 }
 
 .bl-config-grid{
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 .tr-config-grid{
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 .config-innercontent{
@@ -223,10 +230,24 @@ button:active:not(.info-bg-bt, .config-bg-bt){
 
 .bl-container{
     position: absolute;
-    background-color: var(--bg-color);
+    background-color: var(--div-color);
+    padding: 1vmax;
+    border-radius: 1vmax;
+    font-size: 2.5vmax;
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.bl-textbox{
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.2vmax solid white;
+    font-size: 2.5vmax;
 }
 
 .tr-chi{
