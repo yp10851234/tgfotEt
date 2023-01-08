@@ -500,7 +500,7 @@ let tr = Array(1);
 let ctype = -1;//-1:home, 1:bl 5:tr
 let cpage = -1;//-1:home
 
-localStorage.clear() // REMOVE!!!!!!!!!!!
+//localStorage.clear() // REMOVE!!!!!!!!!!!
 standardize();
 retrievestoragedata();
 console.log(list);
