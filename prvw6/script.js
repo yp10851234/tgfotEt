@@ -1,6 +1,6 @@
 const version = "1.6";
 const pageid = "1-1-p3";
-const homebuttonids = ["bl-V-U15", "bl-V-U16", "bl-B-1-1-p3", "bl-P-1-1-p3", "bl-W-1-1-p3", "tr-T-1-1-p3"];
+const homebuttonids = ["bl-V-U15", "bl-V-U16", "bl-B-1-1-p3", "bl-P-1-1-p3-2", "bl-W-1-1-p3", "tr-T-1-1-p3"];
 const homebuttonnames = ["Voc Unit 15", "Voc Unit 16", "Book U1 課文", "Pattern & Book 例句", "Writing", "Translate"];
 const homehtml = '<div class="home-button-container"><button class="home-button" onclick="hbt(0, 1)">' + homebuttonnames[0] + '</button><button class="home-button" onclick="hbt(1, 1)">' + homebuttonnames[1] + '</button><button class="home-button" onclick="hbt(2, 1)">' + homebuttonnames[2] + '</button><button class="home-button" onclick="hbt(3, 1)">' + homebuttonnames[3] + '</button><button class="home-button" onclick="hbt(4, 1)">' + homebuttonnames[4] + '</button><button class="home-button" onclick="hbt(5, 5)">' + homebuttonnames[5] + '</button></div>';
 const infobuttonhtml = '<button class="info-button" onclick="showinfo()"><object data="q.svg" class="q-svg svg" id="q-svg"></object></button>';
@@ -278,6 +278,12 @@ blank[3] = [
     "Debbie deeply admires Jimmy for his generosity and honesty.",
     "Mike had great respect for the wise old man and always treated him politely.",
     "Even if you don't agree with someone, it's still important to respect his or her opinions.",
+    "As soon as these firefighters were ready, they took off at great speed toward the burning building.",
+    "After racing down the runway, the large plane successfully took off into the air.",
+    "Toby has his heart set on being an NBA player and trains for hours every day to improve his basketball skills.",
+    "We are behind schedule, so we need to speed up and work more quickly.",
+    "When the injured boxer rose to his feet after being knocked down, everyone clapped wildly.",
+    "It was Evan's support that carried Mandy through when she lost her sister in a car accident.",
     "As soon as these firefighters were ready, they took off at great speed toward the burning building.",
     "After racing down the runway, the large plane successfully took off into the air.",
     "Toby has his heart set on being an NBA player and trains for hours every day to improve his basketball skills.",

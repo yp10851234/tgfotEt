@@ -241,6 +241,12 @@ var SentenceP = [
     "Toby has his heart set on being an NBA player and trains for hours every day to improve his basketball skills.",
     "We are behind schedule, so we need to speed up and work more quickly.",
     "When the injured boxer rose to his feet after being knocked down, everyone clapped wildly.",
+    "It was Evan's support that carried Mandy through when she lost her sister in a car accident.",
+    "As soon as these firefighters were ready, they took off at great speed toward the burning building.",
+    "After racing down the runway, the large plane successfully took off into the air.",
+    "Toby has his heart set on being an NBA player and trains for hours every day to improve his basketball skills.",
+    "We are behind schedule, so we need to speed up and work more quickly.",
+    "When the injured boxer rose to his feet after being knocked down, everyone clapped wildly.",
     "It was Evan's support that carried Mandy through when she lost her sister in a car accident."
 ];
 
